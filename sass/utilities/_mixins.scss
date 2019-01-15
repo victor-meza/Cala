@@ -1,0 +1,171 @@
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Mixins
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+.section-padding {
+    padding: $section-padding;
+}
+
+
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+@mixin no-padding() {
+    padding: 0;
+}
+
+@mixin no-margin() {
+    margin: 0;
+}
+
+
+
+// Mixins 
+
+@mixin h2lato {
+    font-family: $font-1;
+    font-size: $font-size-h2;
+    text-align: center;
+    
+}
+
+
+@mixin lato-18 {
+    font-size: 18px;
+    font-family: $font-1;
+    font-weight: $ligth;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+
+@mixin p-18 {
+    font-size: 18px;
+    font-family: $font-1;
+    font-weight: $ligth;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+//________________________________________________________________
+    
+
+
+
+@mixin bp($screen-size) {
+    
+    @if map-has-key($breakpoints, $screen-size) {
+    @media (min-width: map-get($breakpoints, $screen-size)) {
+    @content;
+		}
+    } @else {
+
+    @warn "'#{$screen-size}' no ha sido declarado como un breakpoint.";
+    }
+}
+
+
+
+
+
+//https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+
+
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+
+
+//________________________________________________________________
+
+
+
+
+/*margin top ___________________________*/
+
+$i: 0;
+@while $i<=180 {
+    .mt-#{$i} {
+        margin-top: 1px*$i;
+    }
+    $i: $i+10;
+}
+
+
+
+/*margin bottom ___________________________*/
+
+$i: 0;
+@while $i<=180 {
+    .mb-#{$i} {
+        margin-bottom: 1px*$i;
+    }
+    $i: $i+10;
+}
+
+
+
+/*padding top ___________________________*/
+
+$i: 0;
+@while $i<=180 {
+    .pt-#{$i} {
+        padding-top: 1px*$i;
+    }
+    $i: $i+10;
+}
+
+
+
+/*padding bottom ___________________________*/
+
+$i: 0;
+@while $i<=180 {
+    .pb-#{$i} {
+        padding-bottom: 1px*$i;
+    }
+    $i: $i+10;
+}
+
+
+
+
+
+
+
+
+
+

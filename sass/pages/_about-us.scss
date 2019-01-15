@@ -1,0 +1,230 @@
+
+/*_________________________________________________*/
+/*About us*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*_________________________________________________*/
+/*about us*/
+
+
+.background-about {
+    
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0 ;
+}
+
+
+.about {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        
+        grid-gap: 15px;
+    
+        justify-items: center;
+    }
+    
+
+.about {
+    
+       .lato-18 {
+        @include lato-18
+    }
+    
+        h2 {
+        @include h2lato;
+    }
+    
+}
+
+.aboutitem1,
+.aboutitem4, .aboutitem5 {
+    
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content h4 {
+    padding: 35px 0;
+}
+
+
+
+
+/*Brakpoint tablet about us*/
+/*_________________________________________________*/
+/*about us*/
+
+    @include bp(tablet){
+
+    
+    .about {
+        
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, auto);
+        
+        grid-gap: 15px;
+    }
+    
+    .aboutitem1 {
+        grid-column: 3 / span 8;
+        grid-row: 1 ;
+    
+    }
+    .aboutitem2 {
+        grid-column: 1 / span 6;
+        grid-row: 2 ;
+    
+    }
+        
+    .aboutitem3 {
+        grid-column: 7 / span 6;
+        grid-row: 2 ;
+    
+    }
+    
+    .aboutitem4 {
+        grid-column: 3 / span 8;
+        grid-row: 3 ;
+    
+    }
+    
+    .aboutitem5 {
+        grid-column: 3 / span 8;
+        grid-row: 4 ;
+    
+    }
+    
+    .about-img {
+        
+        padding: 10px 0;
+
+    
+    
+    }
+        .about-about,
+        .about-content {
+    
+            width: 100%;
+    
+    }
+        
+        
+}
+
+
+/*Brakpoint desktop about us*/
+/*_________________________________________________*/
+/*about us*/
+
+
+    @include bp(desktop) {
+    
+    
+    .about {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        
+  
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        
+        
+        
+        grid-gap: 25px;
+    }
+    
+    
+    .aboutitem1 {
+        grid-column: 4 / span 6;
+        grid-row: 1 ;
+    
+    }
+    .aboutitem2 {
+        grid-column: 1 / 5;
+        grid-row: 2 ;
+    
+    }
+    
+    .aboutitem3 {
+        grid-column: 5 / 9;
+        grid-row: 2 ;
+    
+    }
+    
+    .aboutitem4 {
+        grid-column: 9 / -1;
+        grid-row: 2 ;
+        align-self: start;
+
+    }
+    
+    .aboutitem5 {
+        grid-column: 9 / -1;
+        grid-row: 2 ;
+        align-self: end;
+        
+
+    }
+    
+    
+    
+    .about img {
+        width: 100%;
+    
+ 
+    }
+        
+    .aboutitem5 {
+        padding-bottom: 40px;
+    }
+        
+    .about-content h4 {
+    padding: 0  0 25px 0;
+}
+    
+    
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

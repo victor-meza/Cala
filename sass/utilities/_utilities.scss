@@ -1,0 +1,126 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Utilities
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+
+section.intro, section.about {
+    background-color: $section-dark;
+    padding: $section-padding;
+    
+}
+
+
+
+section.proyect, section.teams, section.contact {
+    background-color: $section-light;
+    padding: $section-padding;
+}
+
+
+
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+.align-left {
+	@include float-left;
+}
+
+.align-right {
+    @include float-right;
+}
+
+.cllearfix {
+    @include clearfix;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+	$Utilities
+========================================================================== */
+
+
+.work {
+    &:nth-child(1) {
+        @include animation-delay(.1s);
+    }
+    
+    &:nth-child(2) {
+        @include animation-delay(.2s);
+    }
+    
+    &:nth-child(3) {
+        @include animation-delay(.3s);
+    }
+    
+    &:nth-child(4) {
+        @include animation-delay(.4s);
+        
+    }
+    
+    &:nth-child(5) {
+        @include animation-delay(.5s);
+    }
+    
+    &:nth-child(6) {
+        @include animation-delay(.6s);
+    }
+    
+    &:nth-child(7) {
+        @include animation-delay(.7s);
+    }
+    
+    &:nth-child(8) {
+        @include animation-delay(.8s);
+    }
+    
+    &:nth-child(9) {
+        @include animation-delay(.9s);
+    }
+    
+    &:nth-child(10) {
+        @include animation-delay(1.0s);
+    }
+    
+    &:nth-child(11) {
+        @include animation-delay(1.1s);
+    }
+    
+    &:nth-child(12) {
+        @include animation-delay(1.2s);
+    }
+}
+
+.animated {
+    visibility: visible;
+}
+
+
+
+p.space {
+    padding: 30px;
+}
+
+

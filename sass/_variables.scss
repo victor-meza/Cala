@@ -1,0 +1,162 @@
+// Variables
+
+
+// Typography __________________________________________
+
+$font-1: "Open Sans", Helvetica, Arial, sans-serif;
+$font-2: "Open Sans", Helvetica, Arial, sans-serif;
+
+
+
+// Sizes
+
+$base-font-size: 15px;
+$base-line: $base-font-size * 1.7;
+
+
+//$font-1: "OpenSans"
+$font-size-h1:        46px;
+$font-size-h2:        40px;
+$font-size-h3:        34px;
+$font-size-h4:        28px;
+$font-size-h5:        22px;
+$font-size-p:         15px;
+$nav-font-size:       12px;
+
+
+
+$font-size-h1-l:        46px;
+$font-size-h2-l:        40px;
+$font-size-h3-l:        34px;
+$font-size-h4-l:        28px;
+$font-size-h5-l:        22px;
+$font-size-p-l:         15px;
+
+
+
+//Weights
+$ligth:        300;
+$normal:       400;
+$semibold:     500;
+$bold:         700;
+
+
+
+
+// Color _________________________________________________
+
+//Global colors
+$white-color:        #fff;
+$black-color:        #000;
+
+
+
+//Colors gray
+$gray-base:            #333;
+$gray-darker:          #777;
+$gray-dark:            #b4b4b4;
+$gray-light:           #e0e0e0;
+$gray-lighter:         #f7f7f7;
+
+
+
+//Layout colors
+$section-light:        $white-color;
+$section-dark:         $gray-lighter;
+
+
+
+//Colors Footer
+$gray-base-f:            #1c1c1c;
+$gray-darker-f:          #232323;
+$gray-dark-f:            #4c4c4c;
+$gray-light-f:           #a0a0a0;
+$gray-lighter-f:         #f2f2f2;
+
+
+
+
+//Colors 
+$blue:                #445aaa;
+$blue-light:          #2a92d8;
+$cyan-light:          #40acb6;
+$green:               #00aa91;
+$green-light:         #64ad64;
+$lime:                #8bc34a;
+$ambar:               #f9b815;
+$orange:              #e28f2b;
+$red:                 #f44337;
+$pink:                #e21e69;
+$pink-dark:           #b23b6b;      
+$purple:              #983caf;
+
+
+
+$accent-color:       $pink;
+$accent-color-hover: darken($accent-color, 10%);
+
+
+
+$section-padding:     130px  0;
+
+
+
+
+
+$body-bg:             $white-color;
+$text-color:          $gray-base;
+
+$link-color:          $gray-darker;
+$link-hover-color:    lighten($gray-darker, 80%);
+
+
+$color-hr:            $gray-light;
+
+
+
+
+//Breakpoint _________________________________________________
+   
+
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  desktop-lg: 1200px  
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

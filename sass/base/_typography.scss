@@ -1,0 +1,107 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Typography
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+h1 {
+    font-size: $font-size-h1;
+    color: $gray-base;
+    //line-height: $base-line; 
+    font-weight: $ligth;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    color: $gray-base;
+    //line-height: $base-line; 
+    font-weight: $ligth;
+}
+
+
+h3 {
+    font-size: $font-size-h3;
+    color: $gray-base;
+    //line-height: $base-line; 
+    font-weight: $ligth;
+}
+
+
+h4 {
+    font-size: $font-size-h4;
+    color: $gray-base;
+    //line-height: $base-line; 
+    font-weight: $ligth;
+}
+
+h5 {
+    font-size: $font-size-h5;
+    color: $gray-base;
+    //line-height: $base-line; 
+    font-weight: $ligth;
+}
+
+
+p {
+    font-size: $font-size-p;
+    line-height: $base-line;
+    color: $gray-darker;
+    padding-bottom: 25px;
+    font-weight: $ligth;
+}
+
+
+
+.p-l {
+    font-family: $font-2;
+    font-size: $font-size-p-l;
+    color: $gray-darker;
+    padding-bottom: 10px;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+.p-lbl {
+    font-family: $font-2;
+    font-size: $font-size-p-l;
+    color: $white-color;
+    padding-bottom: 15px;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    
+}
+
+
+.h3-l {
+    font-family: $font-2;
+    font-size: $font-size-h3;
+    line-height: $base-line;
+    color: $gray-base;
+    padding-bottom: 25px;
+    font-weight: $ligth;
+    letter-spacing: 1.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

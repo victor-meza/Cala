@@ -1,0 +1,202 @@
+
+
+
+
+
+
+/*_________________________________________________*/
+/*call to action*/
+
+
+
+.background-call {
+    background-color: #E21E69;
+    width: 100%;
+    
+}
+
+
+.calltoaction {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 88px 0 ;
+    
+    
+    display: grid;
+    grid-template-columns:  repeat(8, 1fr);
+    grid-template-rows: auto;
+}
+
+
+.calltoaction h3 {
+    color: #fff;
+    font-size: 28px;
+    padding-bottom: 50px;
+}
+
+
+
+.calltoaction .lato-18 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+
+.calltoaction a {
+    width: 100%;
+    margin-top: 30px;
+    
+    
+}
+
+
+.calltoaction .btn-line {
+    text-align: center;
+}
+
+
+.item1 {
+    grid-column: 2 / span 6;
+    grid-row: 1 ;
+    
+}
+
+.item2 {
+    grid-column: 2 / span 6;
+    grid-row: 2 ;
+    
+}
+
+.item3 {
+    grid-column: 2 / span 6;
+    grid-row: 3 ;
+    
+}
+
+
+
+
+/*Brakpoint tablet call to Action*/
+/*_________________________________________________*/
+/*call to Action*/    
+
+
+
+    @include bp(tablet) {
+    
+        
+.calltoaction {
+    width: 100%;
+    padding: 100px 0;
+
+    
+    
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-template-rows: auto;
+}
+ 
+   
+        
+.calltoaction h3 {
+    color: #fff;
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+        
+        
+.item1 {
+    grid-column: 2 / span 4;
+    grid-row: 1 ;
+    
+}
+
+.item2 {
+    grid-column: 2 / span 6;
+    grid-row: 2 ;
+    
+}
+
+.item3 {
+    grid-column: 2 / span 6;
+    grid-row: 3 ;
+    
+}
+        
+    
+    
+.calltoaction a {
+    width: auto;
+    margin-top: 10px;
+
+
+}
+
+    
+    
+}/*end call to action 768*/
+
+
+
+
+/*Brakpoint desktop call to Action*/
+/*_________________________________________________*/
+/*call to Action*/ 
+
+
+    @include bp(desktop) {
+        
+        
+.calltoaction {
+    width: 100%;
+    max-width: 1200px;
+        
+}
+        
+.item1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 ;
+    align-self: center;
+    
+}
+
+.item2 {
+    grid-column: 5 / span 3;
+    grid-row: 1 ;
+    
+}
+
+.item3 {
+    grid-column: 5 / span 2 ;
+    grid-row: 1 ;
+    align-self: end;
+    
+}
+        
+    
+        
+        
+
+}/*end call to action 1024*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

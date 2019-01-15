@@ -1,0 +1,231 @@
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    
+    
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/*_________________________________________________*/
+/*teams*/
+
+.background-team {
+    background-color: #fff;
+    width: 100%;
+  
+}
+
+.teams {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    
+    justify-items: center;
+    
+   
+}
+
+.team1 {
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+
+.team2 {
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+
+.team3 {
+    grid-column: 1;
+    grid-row: 3;
+    
+}
+
+.team4 {
+    grid-column: 1;
+    grid-row: 4;
+    
+}
+
+.teams .team1 p {
+    @include p-18 
+    
+}
+
+
+.teams img {
+    padding: 20px 0 10px;
+}
+
+
+.teams h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+ 
+
+/*Brakpoint tablet teams*/
+/*_________________________________________________*/
+/*teams*/
+
+    @include bp(tablet) {
+        
+        
+.teams {
+            
+    display: grid;
+            
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, auto);
+            
+    grid-gap: 25px;
+            
+            
+    
+    justify-items: center;
+            
+  } 
+        
+        
+.team1 {
+    
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    
+}
+        
+.team2 {
+    
+    grid-column: 3 / span 4;
+    grid-row: 2;
+            
+}
+        
+.team3 {
+    
+    grid-column: 1 / span 4;
+    grid-row: 3;
+            
+}
+        
+.team4 {
+    
+    grid-column: 5 / span 4;
+    grid-row: 3;
+            
+}
+        
+        
+
+    
+}/*end teams 768*/
+
+
+
+
+/*Brakpoint Desktop teams*/
+/*_________________________________________________*/
+/*teams*/
+
+
+    @include bp(desktop) {
+        
+ 
+.teams {
+            
+    max-width: 1000px;
+            
+    display: grid;
+            
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, auto);
+            
+    grid-gap: 35px;
+            
+            
+    
+    justify-items: center;
+            
+            
+}   
+        
+
+        
+.team1 {
+    grid-column: 3 / span 5;
+    grid-row: 1;
+    
+}
+        
+.team2 {
+    
+    grid-column: 1 / span 3;
+    grid-row: 2;
+            
+}
+        
+.team3 {
+    
+    grid-column: 4 / span 3;
+    grid-row: 2;
+            
+}
+        
+.team4 {
+    
+    grid-column: 7 / span 3;
+    grid-row: 2;
+            
+}
+        
+       
+
+}/*end teams 1024*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

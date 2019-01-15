@@ -1,0 +1,226 @@
+
+/*________________________________________________*/
+
+
+.proyect {
+      .lato-18 {
+        @include lato-18
+    }
+    
+        h2 {
+        @include h2lato;
+    }
+    
+}
+
+.proyect-proyect,
+.proyect-works {
+    
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+       
+}
+
+.proyect-proyect .lato-18 {
+    
+    margin-bottom: 30px;
+    
+}
+
+
+
+/* Container
+------------------------------------------------ */
+
+
+.containertwo {
+    
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        grid-gap: 5px;
+    
+
+
+}
+
+
+/*Brakpoint tablet projects*/
+/*________________________________________________*/
+/*projects*/
+
+
+
+    @include bp(tablet) {
+    
+.containertwo {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        }
+        
+
+}
+
+
+
+/*Brakpoint tablet projects*/
+/*________________________________________________*/
+/*projects*/
+
+
+
+     @include bp(desktop) {
+
+.containertwo {
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+        }  
+         
+
+
+img {
+    width: 100%;
+    
+  }
+
+}
+
+
+
+/* ==========================================================================
+	$Works
+========================================================================== */
+
+
+
+.work {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    
+
+    
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($black-color, .6);
+        opacity: 0;
+        @include transition(opacity, .6s);
+            
+    }
+    
+    .overlay-caption {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        @include transform(translateY(100%));
+    }
+    
+    h5, p, img {
+        @include transition(all, .5s);
+    }
+    
+    h5, p {
+        color: $white-color;
+        margin: 0;
+        opacity: 0;
+    }
+    
+    h5 {
+        margin-bottom: 5px;
+        @include transform(translate3d(0, 200%, 0));
+    }
+    p {
+        @include transform(translate3d(0, 200%, 0));
+    }
+
+}
+
+
+
+
+
+.work-box:hover {
+    
+    img {
+        @include transform(scale(1.1));
+    }
+    
+    .overlay {
+        opacity: 1;
+        
+        h5, p {
+            opacity: 1;
+            @include transform(translate3d(0, -80px, 0));
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+	$Utilities
+========================================================================== */
+
+
+.work {
+    &:nth-child(1) {
+        @include animation-delay(.1s);
+    }
+    
+    &:nth-child(2) {
+        @include animation-delay(.2s);
+    }
+    
+    &:nth-child(3) {
+        @include animation-delay(.3s);
+    }
+    
+    &:nth-child(4) {
+        @include animation-delay(.4s);
+        
+    }
+    
+    &:nth-child(5) {
+        @include animation-delay(.5s);
+    }
+    
+    &:nth-child(6) {
+        @include animation-delay(.6s);
+    }
+    
+    &:nth-child(7) {
+        @include animation-delay(.7s);
+    }
+    
+    &:nth-child(8) {
+        @include animation-delay(.8s);
+    }
+    
+
+}
+
+.animated {
+    visibility: visible;
+}
+
+
+
+p.space {
+    padding: 30px;
+}
+
+
+
+

@@ -1,0 +1,255 @@
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/*_________________________________________________*/
+/*contact*/
+
+.background-contact {
+    background-color: #fff;
+    width: 100%;
+  
+}
+
+
+.contact {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-template-rows: auto;
+    
+}
+
+
+.contact-icon,
+.contact-content {
+    
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    
+    @include h2lato;
+    padding-bottom: 40px;
+    
+}
+
+.contact-content h5 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+    
+.contact-icon {
+    padding-bottom: 20px;
+}
+
+
+.contact-content .send   {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+
+input, textarea {
+    font-family: $font-1;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+
+
+.contact-btn {
+    text-align: center;
+
+}
+
+
+#name::placeholder {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+#mail::placeholder {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+#msg::placeholder {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+/*Brakpoint tablet contact*/
+/*_________________________________________________*/
+/*contact*/
+
+
+
+    @include bp(tablet) {
+        
+.contact {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+
+    }
+        
+  
+}/*end contact 768*/
+
+
+
+
+
+/*Brakpoint Desktop contact*/
+/*_________________________________________________*/
+/*contact*/
+
+
+
+    @include bp(desktop) {
+        
+
+.contact .datos {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+   
+        
+    grid-gap: 30px;
+        
+        
+}
+    
+.contact1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    
+}
+    
+    
+.contact5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+    
+    
+form textarea {
+    height: 100%;
+}
+        
+        
+.contact p {
+    margin-bottom: 50px;
+}
+    
+
+        
+.contact-content .send   {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+    
+.forms {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 70%;
+        
+  
+        
+    display: grid;
+        
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 150px 1fr;
+   
+        
+    grid-gap: 20px;
+        
+.formu1 {
+    grid-column: 1;
+    grid-row: 1;
+        }
+        
+.formu2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+        }
+        
+.formu3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-top: 0;
+             
+}
+        
+.formu4 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+        }
+        
+    }
+        
+
+}/*end contact 1024*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

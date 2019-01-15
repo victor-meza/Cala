@@ -1,0 +1,287 @@
+
+/*_________________________________________________*/
+/*wrapper*/
+
+
+
+img {
+    width: 100%;
+    
+}
+
+/*_________________________________________________*/
+/*wrapper*/
+
+  
+    
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 100px;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3, 1fr);
+    
+    grid-gap: 30px;
+    
+    
+     .uno {
+        max-width: 70%;
+        margin: 0 auto;
+            
+    }
+   
+    
+    .uno {
+            grid-column: 1 ;
+            grid-row: 1;
+            text-align: center;
+            align-self: center;
+        
+        }
+        
+    .dos {
+            grid-column: 1 ;
+            grid-row: 2;
+            text-align: center;
+        }
+            
+    .tres {
+            grid-column: 1 ;
+            grid-row: 3;
+            text-align: center;
+            
+        }
+    
+    
+.uno h5 {
+    color: $accent-color;
+    font-size: 18px;
+    font-weight: 500;
+        
+}
+
+
+.uno h3 {
+    color: #333;
+    font-size: 28px;
+    font-family: $font-1;
+    line-height: 43px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.uno p {
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+    
+.uno-btn  {
+        padding-bottom: 30px
+    }    
+    
+    
+    .dos h3 {
+        font-size: 18px;
+        color: $gray-base;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 18px 0;
+        
+    }
+    
+    
+    .tres h3 {
+        font-size: 18px;
+        color: $gray-base;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 18px 0;
+        
+    }
+    
+    .dos p {
+        padding: 0 30px;
+    }
+    
+    .tres p {
+        padding: 0 30px;
+    }
+    
+  
+    
+    
+  } /*end wraper*/
+    
+
+
+/*Brakpoint tablet wraper*/
+/*_________________________________________________*/
+/*wraper*/
+
+
+@include bp(tablet) {
+    
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    
+    grid-gap: 30px;
+        
+        
+        
+    .uno {
+        max-width: 55%;
+        margin: 0 auto;
+            
+    }
+    
+    
+    
+    
+    .uno {
+            grid-column: 1 /span 2;
+            grid-row: 1;
+            text-align: center;
+            
+        
+        }
+        
+    .dos {
+            grid-column: 1 ;
+            grid-row: 2;
+            text-align: center;
+        }
+            
+    .tres {
+            grid-column: 2 ;
+            grid-row: 2;
+            text-align: center;
+            
+        }
+        
+        
+    .uno h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+        
+        .dos h3 {
+            text-align: left;
+        }
+        
+        
+        .tres h3 {
+            text-align: left;
+        }
+        
+        .dos p {
+            padding: 0;
+            text-align: left;
+    }
+    
+        .tres p {
+            padding: 0;
+            text-align: left;
+    }
+        
+        
+    
+    }
+    
+  
+    
+}/*end wraper 768*/
+
+
+
+
+/*Brakpoint desktop wraper*/
+/*_________________________________________________*/
+/*wraper*/
+
+
+
+    @include bp(desktop) {
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 170px 0;
+    
+    
+    display: grid;
+    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    
+    grid-gap: 30px;
+    
+    
+    
+    .uno {
+        max-width: 100%;
+        text-align: left;
+            
+    }
+    
+
+
+.uno {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+ 
+}
+
+
+.dos {
+    grid-column: 5 / span 4 ;
+    grid-row: 1;
+    
+}
+
+
+.tres {
+    grid-column: 9 / span 4 ;
+    grid-row: 1 ;
+    
+}
+    
+    .uno h3 {
+        text-align: left;
+}
+
+
+    
+}
+    
+}/*end wraper 1024*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

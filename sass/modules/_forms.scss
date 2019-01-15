@@ -1,0 +1,49 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Forms
+ * ----------------------------------------------------------------------------------------
+ */
+
+
+form {
+    
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    
+    
+    div + div {
+        margin-top: 1.5em;
+    }
+}
+
+
+label {
+    /*display: inline-block;*/
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 16px sans-serif;
+    padding: 15px 10px;
+    
+    
+    width: 100%;
+    border: 1px solid #E6E5E7;
+    
+    
+    &:focus {
+        border-color: red;
+    }
+      
+}
+
+textarea {
+   
+    height: 6em;
+}
+
+button {
+    padding: .5em 1em;
+}

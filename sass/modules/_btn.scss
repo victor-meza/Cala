@@ -1,0 +1,82 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Btn
+ * ----------------------------------------------------------------------------------------
+ */
+
+.btn {
+    background-color: $accent-color;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    @include border-radius(2px);
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+    &:hover,
+    &:focus {
+        background-color: darken($accent-color, 5%);
+        color: $white-color;
+    }
+    
+    &-large {
+        padding: 15px 80px;
+    }
+    
+    &-fill {
+        padding: 18px 110px;
+    }
+    
+    
+}
+
+
+.btn-line {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    @include border-radius(2px);
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+    &:hover,
+    &:focus {
+        background-color: darken($accent-color, 5%);
+        color: $white-color;
+        border: 1px solid #fff;
+    
+    }
+    
+    &-large {
+        padding: 15px 80px;
+    }
+    
+    &-fill {
+        padding: 18px 110px;
+    }
+    
+    
+}
+
+
+
+
+.to-top {
+    padding: 10px 15px;
+    background-color: rgba($accent-color, 0.8);
+    color: #fff;
+    @include border-radius(2px);
+    font-size: 12px;
+    
+    
+    &:hover,
+    &:focus {
+        background-color: darken($accent-color, 8%);
+        color: $white-color;
+    }
+    
+}

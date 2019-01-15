@@ -1,0 +1,67 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Base styles
+ * ----------------------------------------------------------------------------------------
+ */
+
+* {
+   box-sizing: border-box;
+    
+    @include no-padding;
+    @include no-margin;
+}
+
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $accent-color-hover;
+    }
+    
+}
+
+
+
+body {
+    font-family: $font-1;
+    font-weight: $normal;
+    color: $gray-base;
+    background-color: #fff;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+
+span.icon {
+    font-size: 40px;
+    color: $accent-color;
+}

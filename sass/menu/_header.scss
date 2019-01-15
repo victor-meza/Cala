@@ -1,0 +1,89 @@
+
+
+
+/* ==========================================================================
+Nav desktop
+========================================================================== */
+
+
+
+header {
+  padding: 40px 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  position: relative;
+  width: 1170px;
+  max-width: 90%;
+  margin: 0 auto;
+  transition: padding 300ms ease-in-out;
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $nav-font-size;
+    text-decoration: none;
+  }
+
+  .logo {
+      display: inline-block;
+      width: 110px;
+  }
+
+}
+
+
+.header-nav {
+    padding-top: 10px;
+}
+
+
+  ul.primary-nav {
+    margin: 0 0 0 75px;
+    padding: 0;
+    vertical-align: middle;
+
+
+    li {
+      display: inline;
+        letter-spacing: 2px;
+        vertical-align: middle;
+
+      a {
+        color: #fff;
+        padding-right: 35px;
+
+        &:hover {
+          color: #c7c7c7;
+        }
+      }
+      &:last-child a {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .header-nav {
+    display: inline-block;
+    float: right;
+  }
+
+    
+
+.navigation {
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.fixed {
+  position: fixed;
+  background-color: rgba(22, 54, 83, 0.7);
+  z-index: 999;
+  width: 100%;
+}
+
+
+
+
+
+
