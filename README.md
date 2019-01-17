@@ -1,7 +1,7 @@
 # "Cala" - One page website 
 Responsive Multi Purpose HTML5 Template made by Victor Meza 
 
-[Demo](http://cala.manzanaverde.cl)
+### [Demo](http://cala.manzanaverde.cl)
 
 ## General Features
 
