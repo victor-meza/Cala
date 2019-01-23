@@ -1,4 +1,4 @@
-# "Cala" - One page website 
+# "Cala" - One page website - Css Grid
 Responsive Multi Purpose HTML5 Template made by Victor Meza 
 
 ### [Demo](http://cala.manzanaverde.cl)
