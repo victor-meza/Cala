@@ -3,7 +3,7 @@ Responsive Multi Purpose HTML5 Template made by Victor Meza
 
 ### [Demo](http://cala.manzanaverde.cl)
 
-### [Sketch File](http://cala.manzanaverde.cl)
+### [Sketch File](http://sketch.manzanaverde.cl)
 
 ## General Features
 
